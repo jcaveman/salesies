@@ -263,7 +263,7 @@ nav h1  {
 	font-weight: 700;
 	padding: 22px 25px 0px;
 	letter-spacing: 0px;
-	color: #666666;
+	color: #ffffff;
 }
 
 nav ul {
@@ -279,8 +279,9 @@ nav li {
 nav li a {
 	font: 16px 'Lato', sans-serif;
 	font-weight: 300;
-	padding: 10px 25px;
+	padding: 15px 25px;
 	letter-spacing: 0px;
+	color: #FFFFFF;
 }
 nav li a.logo {
 	display: none;
@@ -310,7 +311,7 @@ nav {
 	left: 0;
 	top: 0;
 	margin: 0;
-	background-color: #eeeeee;
+	background-image: url('../images/c.jpg');
 	border-radius: 0px;
 	
 	/* starting point */
@@ -495,11 +496,12 @@ input[type=button], input[type=button]:hover {
 	padding:12px 10px 9px 10px;
 }
 
+/*
 .lighter{
 	background-color: #eeeeee;
 }
+*/
 
 .lighter input[type=text]{
 	border:1px solid #d0d0d0;
-	background-color:#eeeeee;
 }
