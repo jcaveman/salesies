@@ -2,86 +2,154 @@
 <html lang="en">
 <head> 
 
-<title>Salesies</title> 
+	<title>Salesies</title> 
 
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="HandheldFriendly" content="True">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<!-- Style Sheets --> 
-<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-<link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
-<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+	<!-- Style Sheets --> 
+	<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
-<!-- Scripts --> 
-<script type="text/javascript">
-	if (typeof jQuery == 'undefined')
-		document.write(unescape("%3Cscript src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'" + 
-															"type='text/javascript'%3E%3C/script%3E"))
-</script>
-<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
+	<link href="images/apple-touch-icon-57x57.png"
+	sizes="57x57"
+	rel="apple-touch-icon-precomposed">
+	<link href="images/apple-touch-startup-image-320x460.png"
+	media="(device-width: 320px) and (device-height: 480px)
+	and (-webkit-device-pixel-ratio: 1)"
+	rel="apple-touch-startup-image">
+
+	<!-- iPhone (Retina) -->
+	<link href="images/apple-touch-icon-114x114.png"
+	sizes="114x114"
+	rel="apple-touch-icon-precomposed">
+	<link href="images/apple-touch-startup-image-640x920.png"
+	media="(device-width: 320px) and (device-height: 480px)
+	and (-webkit-device-pixel-ratio: 2)"
+	rel="apple-touch-startup-image">
+
+	<!-- iPhone 5 -->
+	<link href="images/apple-touch-startup-image-640x1096.png"
+	media="(device-width: 320px) and (device-height: 568px)
+	and (-webkit-device-pixel-ratio: 2)"
+	rel="apple-touch-startup-image">
+
+
+	<!-- iPad -->
+	<link href="images/apple-touch-icon-72x72.png"
+	sizes="72x72"
+	rel="apple-touch-icon-precomposed">
+	<link href="images/apple-touch-startup-image-768x1004.png"
+	media="(device-width: 768px) and (device-height: 1024px)
+	and (orientation: portrait)
+	and (-webkit-device-pixel-ratio: 1)"
+	rel="apple-touch-startup-image">
+	<link href="images/apple-touch-startup-image-748x1024.png"
+	media="(device-width: 768px) and (device-height: 1024px)
+	and (orientation: landscape)
+	and (-webkit-device-pixel-ratio: 1)"
+	rel="apple-touch-startup-image">
+
+	<!-- iPad (Retina) -->
+	<link href="images/apple-touch-icon-144x144.png"
+	sizes="144x144"
+	rel="apple-touch-icon-precomposed">
+	<link href="images/apple-touch-startup-image-1536x2008.png"
+	media="(device-width: 768px) and (device-height: 1024px)
+	and (orientation: portrait)
+	and (-webkit-device-pixel-ratio: 2)"
+	rel="apple-touch-startup-image">
+	<link href="images/apple-touch-startup-image-1496x2048.png"
+	media="(device-width: 768px) and (device-height: 1024px)
+	and (orientation: landscape)
+	and (-webkit-device-pixel-ratio: 2)"
+	rel="apple-touch-startup-image">
+
+
+	<!-- Scripts --> 
+	<script type="text/javascript">
+		if (typeof jQuery == 'undefined')
+			document.write(unescape("%3Cscript src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'" + 
+				"type='text/javascript'%3E%3C/script%3E"))
+	</script>
+	<script type="text/javascript" src="js/trunk.js"></script>
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
 <![endif]-->
 
+<!--Delay Navigation Load
+<script type = "text/javascript">  
+$(document).ready(function() {
+    $(".navigation").delay(1000).fadeIn(500);
+});
+</script>-->
+
+
+
+
+
+
 </head> 
- 
+
 <body> 
 
-<div class="container">
+	<div class="container">
 
-	<header class="slideRight">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-		<ul id="navToggle" class="burger slideRight">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-			<li></li><li></li><li></li>
-		</ul>
-		<h1><a href="#">Salesies</a></h1>
-	</header>
-	
-    <div class="navigation">
-	<nav class="slideLeft">
-		<ul>
-<div class="lighter">
-<form>
-	<span><input type="text" class="search rounded" placeholder="Search"></span>
-</form>
-</div>
-			<div class="navitems">
-			<br>
-            <li><a href="#">+ Add an Item</a></li>
-			<br/>
-            <h1>Browse</h1>
-			<li><a href="#">New Items</a></li>
-			<li><a href="#">Popular Items</a></li>
-			<li><a href="#">Friends Items</a></li>
-			<li><a href="#">Your Items</a></li>
-            <br/>
-            <br/>
-            <h1>Categories</h1>
-			<li><a href="index.html">Home Temp</a></li>
-			<li><a href="_appliances.html" class="router">Appliances</a></li>
-			<li><a href="_antiques.html" class="router">Antiques</a></li>
-			<li><a href="_art.html" class="router">Art</a></li>
-			<li><a href="_bikes.html" class="router">Bikes</a></li>
-			<li><a href="#">Books</a></li>
-			<li><a href="#">Computer</a></li>
-			<li><a href="#">Free</a></li>
-			<li><a href="#">Furniture</a></li>
-			<li><a href="#">Jewelery</a></li>
-			<li><a href="#">Sporting</a></li>
-			<li><a href="#">Tickets</a></li>
-			<li><a href="#">Tools</a></li>
-			<li><a href="#">Wanted</a></li>
-			<li><a href="#">Baby</a></li>
-			</div>
-          
+		<header class="slideRight">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+			<ul id="navToggle" class="burger slideRight">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+				<li></li><li></li><li></li>
+			</ul>
+			<h1><a href="#">Salesies</a></h1>
+		</header>
 
-		</ul>
-	</nav>
-	
-	<div class="content slideRight">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-		<div class="responsive">
+		<div class="navigation hidden" id="navi">
+			<nav class="slideLeft">
+				<ul>
+					<div class="lighter">
+						<form class="search">
+							<span><input type="text" class="search rounded" placeholder=""></span>
+						</form>
+					</div>
+					<div class="navitems">
+						<br>
+						<li><a href="_add.html" class="router">+ Add an Item</a></li>
+						<br/>
+						<h1>Browse</h1>
+						<li><a href="#">New Items</a></li>
+						<li><a href="#">Popular Items</a></li>
+						<li><a href="#">Friends Items</a></li>
+						<li><a href="#">Your Items</a></li>
+						<br/>
+						<br/>
+						<h1>Categories</h1>
+						<li><a href="index.html">Home Temp</a></li>
+						<li><a href="_appliances.html" class="router">Appliances</a></li>
+						<li><a href="_antiques.html" class="router">Antiques</a></li>
+						<li><a href="_art.html" class="router">Art</a></li>
+						<li><a href="_bikes.html" class="router">Bikes</a></li>
+						<li><a href="#">Books</a></li>
+						<li><a href="#">Computer</a></li>
+						<li><a href="_records.html" class="router">Free</a></li>
+						<li><a href="#">Furniture</a></li>
+						<li><a href="#">Jewelery</a></li>
+						<li><a href="#">Sporting</a></li>
+						<li><a href="#">Tickets</a></li>
+						<li><a href="#">Tools</a></li>
+						<li><a href="#">Wanted</a></li>
+						<li><a href="#" class="lastnav">Baby</a></li>
+					</div>
+
+
+				</ul>
+			</nav>
+		</div>
+
+		<div class="content slideRight">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+			<div class="responsive">
 <!--			<div class="top-item">
 			<img src="images/pittsburgh.jpg" class="item-image">
 			</div>
@@ -102,1531 +170,704 @@
 							</div>
 						</div>
 			</div>
-			  -->
+		-->
 
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><a href="detail.html"><img src="images/vu.jpg"></a>
-					</div>
+		<div class="row">
+			<div class="large-6 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><a href="detail.html"><img src="images/vu.jpg"></a>
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
+			</div>
 
 
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><a href="detail.html"><img src="images/shark.jpg"></a>
-					</div>
+			<div class="large-6 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><a href="detail2.html"><img src="images/shark.jpg"></a>
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
 
 
 
 
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><a href="detail.html"><img src="images/pittsburgh.jpg"></a>
-					</div>
+		<div class="row">
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><a href="detail3.html" class="router"><img src="images/pittsburgh.jpg"></a>
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
+			</div>
 
 
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><a href="detail.html"><img src="images/champs-print.jpg"></a>
-					</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><a href="detail.html"><img src="images/champs-print.jpg"></a>
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
+			</div>
 
 
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/seattle.jpg">
-					</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/seattle.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
 
 
 
 
 
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
+		<div class="row">
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/eames.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
+			</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/vu.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
+			</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/shark.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
 
 
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
+		<div class="row">
+			<div class="large-6 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/vu.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
+			</div>
 
 
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
+			<div class="large-6 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/shark.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
 
 
 
 
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/pittsburgh.jpg">
-					</div>
+		<div class="row">
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/pittsburgh.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
+			</div>
 
 
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/champs-print.jpg">
-					</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/champs-print.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
+			</div>
 
 
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/seattle.jpg">
-					</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/seattle.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
 
 
 
 
 
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
+		<div class="row">
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/eames.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
+			</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/vu.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
+			</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/shark.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
 
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
+		<div class="row">
+			<div class="large-6 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/vu.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
+			</div>
 
 
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
+			<div class="large-6 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/shark.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
 
 
 
 
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/pittsburgh.jpg">
-					</div>
+		<div class="row">
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/pittsburgh.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
+			</div>
 
 
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/champs-print.jpg">
-					</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/champs-print.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
+			</div>
 
 
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/seattle.jpg">
-					</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/seattle.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
 
 
 
 
 
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
+		<div class="row">
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/eames.jpg">
 						</div>
-			</div>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
-
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/vu.jpg">
 						</div>
-			</div>
-					</div>
-				</div>
-
-
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
-
-
-
-
-
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/pittsburgh.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/shark.jpg">
 						</div>
-			</div>
-					</div>
-				</div>
-
-
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/champs-print.jpg">
-					</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
-
+			</div>
+		</div>
 
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/seattle.jpg">
-					</div>
+		<div class="row">
+			<div class="large-6 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/vu.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
-
-
 
-			<div class="row">
-				<div class="large-3 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
 
-				<div class="large-3 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
+			<div class="large-6 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/shark.jpg">
 						</div>
-			</div>
-					</div>
-				</div>				
-				<div class="large-3 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
-				<div class="large-3 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
 			</div>
+		</div>
 
-					</div>
-				</div>
-			</div>
 
 
 
 
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
+		<div class="row">
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/pittsburgh.jpg">
 						</div>
-			</div>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
 
 
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/champs-print.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
+			</div>
 
 
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
+			<div class="large-4 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/seattle.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
 
 
 
-
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/pittsburgh.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
 
 
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/champs-print.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
 
 
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/seattle.jpg">
-					</div>
+		<div class="row">
+			<div class="large-3 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/eames.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
 			</div>
 
-
-
-
-
-
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
+			<div class="large-3 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/eames.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
+			</div>				
+			<div class="large-3 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/vu.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
 				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
+			</div>
+			<div class="large-3 columns">
+				<div class="panel">
+					<div class="frame">
+						<div class="itemimage"><img src="images/shark.jpg">
+						</div>
 						<div class="iteminfo">
 							<div class="itemtitle">
-							VHS Porn Collection
+								VHS Porn Collection
 								<div class="hashtag">#Art, Media, Film
 								</div>
 							</div>
 							<div class="itemprice">
-							$666.00
+								$666.00
 							</div>
 						</div>
-			</div>
 					</div>
-				</div>
-			</div>
 
-
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-
-
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-			</div>
-
-
-
-
-
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/pittsburgh.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-
-
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/champs-print.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-
-
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/seattle.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-			</div>
-
-
-
-			<div class="row">
-				<div class="large-3 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-
-				<div class="large-3 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>				
-				<div class="large-3 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-				<div class="large-3 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-
-					</div>
-				</div>
-			</div>
-
-
-
-
-
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-
-
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-			</div>
-
-
-
-
-
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/pittsburgh.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-
-
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/champs-print.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-
-
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/seattle.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-			</div>
-
-
-
-
-
-
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-
-
-				<div class="large-6 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-			</div>
-
-
-
-
-
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/pittsburgh.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-
-
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/champs-print.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-
-
-				<div class="large-4 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/seattle.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-			</div>
-
-
-
-
-
-
-			<div class="row">
-				<div class="large-3 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-
-				<div class="large-3 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/eames.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>				
-				<div class="large-3 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/vu.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-					</div>
-				</div>
-				<div class="large-3 columns">
-					<div class="panel">
-			<div class="frame">
-					<div class="itemimage"><img src="images/shark.jpg">
-					</div>
-						<div class="iteminfo">
-							<div class="itemtitle">
-							VHS Porn Collection
-								<div class="hashtag">#Art, Media, Film
-								</div>
-							</div>
-							<div class="itemprice">
-							$666.00
-							</div>
-						</div>
-			</div>
-
-					</div>
 				</div>
 			</div>
+		</div>
 
 
 
@@ -1634,13 +875,25 @@
 
 
 	</div>
-	
-</div>
+	</div>
 
+
+
+
+
+<!--display Nav after load-->
 <script type="text/javascript">
-var $routerLinks = $('.router');
+$(window).load(function(){
+$('#navi').removeClass('hidden');
+});
 </script>
-<script type="text/javascript" language="javascript" src="js/Global.js"></script>	
+
+
+
+	<script type="text/javascript">
+		var $routerLinks = $('.router');
+	</script>
+	<script type="text/javascript" src="js/Global.js"></script>	
 </body> 
 </html>
 
